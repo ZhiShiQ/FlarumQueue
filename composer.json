@@ -1,6 +1,6 @@
 {
   "name": "zhishiq/flarum-queue",
-  "description": "Say hello to the world!",
+  "description": "Add asyn job queue handle feature to laravel with laravel queue",
   "type": "flarum-extension",
   "license": "MIT",
   "authors": [
@@ -15,8 +15,7 @@
   },
   "require": {
     "flarum/core": "^0.1.0-beta.8",
-    "illuminate/queue": "^5.5",
-    "illuminate/redis": "^5.5"
+    "illuminate/queue": "^5.5"
   },
   "autoload": {
     "psr-4": {
@@ -30,7 +29,7 @@
     "flarum-extension": {
       "title": "Queue",
       "icon": {
-        "image": "icon.png",
+        "image": "queue.png",
         "backgroundSize": "46% 63%",
         "backgroundPosition": "center",
         "backgroundRepeat": "no-repeat",

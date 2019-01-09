@@ -12,29 +12,10 @@ export default class QueueSettingsModal extends SettingsModal {
   form() {
     return [
       <div className="Form-group">
-        <label>{app.translator.trans('zhishiq.queue.admin.app_id_label')}</label>
-        <input className="FormControl" bidi={this.setting('zhishiq.queue.app_id')}/>
+        <label>{app.translator.trans('zhishiq.queue.admin.queue_backend')}</label>
+        <input className="FormControl" bidi={this.setting('zhishiq.queue.backend')}/>
       </div>,
 
-      <div className="Form-group">
-        <label>{app.translator.trans('zhishiq.queue.admin.subscribe_endpoint_label')}</label>
-        <input className="FormControl" bidi={this.setting('zhishiq.queue.subscribe_endpoint')}/>
-      </div>,
-
-      <div className="Form-group">
-        <label>{app.translator.trans('zhishiq.queue.admin.app_client_key_label')}</label>
-        <input className="FormControl" bidi={this.setting('zhishiq.queue.app_client_key')}/>
-      </div>,
-
-      <div className="Form-group">
-        <label>{app.translator.trans('zhishiq.queue.admin.push_endpoint_label')}</label>
-        <input className="FormControl" bidi={this.setting('zhishiq.queue.push_endpoint')}/>
-      </div>,
-
-      <div className="Form-group">
-        <label>{app.translator.trans('zhishiq.queue.admin.app_server_key_label')}</label>
-        <input className="FormControl" bidi={this.setting('zhishiq.queue.app_server_key')}/>
-      </div>,
     ];
   }
 }
