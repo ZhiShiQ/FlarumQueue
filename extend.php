@@ -29,9 +29,10 @@ return [
 
         $container->register(\Illuminate\Queue\QueueServiceProvider::class);
 
-        $container->singleton(\Illuminate\Queue\QueueManager::class, function ($container) {
+        $container->singleton(\Illuminate\Contracts\Queue\Factory::class, function ($container) {
             return $container['queue'];
         });
+        $container->alias(\Illuminate\Contracts\Queue\Factory::class, \Illuminate\Queue\QueueManager::class);
 
         $container->singleton(\Illuminate\Queue\Listener::class, function () {
             return new Listener(__DIR__ . "/../../");
