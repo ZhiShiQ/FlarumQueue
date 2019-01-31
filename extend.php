@@ -40,4 +40,5 @@ return [
 
         $container->bind(\Illuminate\Contracts\Debug\ExceptionHandler::class, \ZhiShiQ\Flarum\Queue\ExceptionHandler::class);
     },
+    new Extend\Locales(__DIR__ . '/locale'),
 ];
